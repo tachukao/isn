@@ -24,7 +24,7 @@ def load_plot_setting():
     plt.rc('axes.spines', top=False)
 
 
-def plot_eig(W_evals, label="$W$", figsize=(8,8)):
+def plot_eig(W_evals, label="$W$", figsize=(5,5)):
     plt.figure(figsize=figsize)
     plt.plot(W_evals.real,W_evals.imag,'o',color='grey')
     plt.axis([-12,12,-10,10])
